@@ -1,0 +1,12 @@
+{
+  "name": "linkedin-poster",
+  "version": "1.0.0",
+  "description": "Post jobs to LinkedIn via Job Posting API",
+  "main": "scripts/linkedin.js",
+  "scripts": {
+    "post": "node scripts/linkedin.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}

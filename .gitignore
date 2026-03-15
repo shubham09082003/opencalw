@@ -1,0 +1,13 @@
+node_modules/
+workspace/client_secret.json
+workspace-*/client_secret.json
+agents/*/sessions/
+credentials/
+media/inbound/
+extensions/github-pr-review/index.ts
+.env
+.env.local
+*.token
+*-secret*
+*.bak
+*.bak.*

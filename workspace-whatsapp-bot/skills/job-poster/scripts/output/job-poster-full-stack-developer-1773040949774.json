@@ -1,0 +1,26 @@
+{
+  "company": "Excellence Technologies",
+  "headline": "WE ARE HIRING",
+  "title": "Full Stack Developer",
+  "experience": "Fresher",
+  "location": "Noida",
+  "type": "Full-Time",
+  "salary": "Competitive",
+  "skills": [
+    "JavaScript",
+    "React.js",
+    "Node.js",
+    "MongoDB",
+    "Express.js",
+    "Git"
+  ],
+  "benefits": [
+    "Learning Opportunities",
+    "Mentorship",
+    "Flexible Hours"
+  ],
+  "contact": "careers@excellencetech.com",
+  "website": "www.excellencetech.com",
+  "posterPath": "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\skills\\job-poster\\scripts\\output\\job-poster-full-stack-developer-1773040949774.png",
+  "createdAt": "2026-03-09T07:22:31.237Z"
+}

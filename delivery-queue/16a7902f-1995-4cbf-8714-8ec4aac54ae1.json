@@ -1,0 +1,28 @@
+{
+  "id": "16a7902f-1995-4cbf-8714-8ec4aac54ae1",
+  "enqueuedAt": 1772883238683,
+  "channel": "whatsapp",
+  "to": "+917827273619",
+  "accountId": "default",
+  "payloads": [
+    {
+      "text": "📋 *Updated Job Poster*\n\nNow with a cleaner bottom card design - your branded background shows through!\n\n✅ Reply \"Yes\" to post on LinkedIn\n❌ Reply \"No\" for more changes",
+      "mediaUrl": "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\skills\\job-poster\\scripts\\output\\job-poster-full-stack-developer-1772883233295.png",
+      "mediaUrls": [
+        "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\skills\\job-poster\\scripts\\output\\job-poster-full-stack-developer-1772883233295.png"
+      ]
+    }
+  ],
+  "threadId": null,
+  "gifPlayback": false,
+  "mirror": {
+    "sessionKey": "agent:whatsapp-bot:whatsapp:direct:+917827273619",
+    "agentId": "whatsapp-bot",
+    "text": "📋 *Updated Job Poster*\n\nNow with a cleaner bottom card design - your branded background shows through!\n\n✅ Reply \"Yes\" to post on LinkedIn\n❌ Reply \"No\" for more changes",
+    "mediaUrls": [
+      "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\skills\\job-poster\\scripts\\output\\job-poster-full-stack-developer-1772883233295.png"
+    ]
+  },
+  "retryCount": 2,
+  "lastError": "Local media path is not under an allowed directory: C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\skills\\job-poster\\scripts\\output\\job-poster-full-stack-developer-1772883233295.png"
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Full Stack Developer",
+  "company": "Excellence Technologies",
+  "location": "Noida, Uttar Pradesh",
+  "type": "Full-Time",
+  "experience": "2-4 Years",
+  "salary": "3-4 LPA",
+  "skills": [
+    "React.js",
+    "Node.js",
+    "MongoDB",
+    "AWS",
+    "Docker"
+  ],
+  "email": "careers@excellencetech.com",
+  "outputPath": "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\skills\\job-poster\\scripts\\output\\poster-full-stack-developer-1773144339467.png",
+  "posterPath": "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\skills\\job-poster\\scripts\\output\\poster-full-stack-developer-1773144340444.png",
+  "templateBased": true,
+  "template": "TEAL_DARK",
+  "createdAt": "2026-03-10T12:05:40.679Z"
+}

@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.24",
+    "lastTouchedAt": "2026-03-05T05:23:57.513Z"
+  },
+  "env": {
+    "SERPAPI_KEY": "",
+    "REPLICATE_API_TOKEN": "",
+    "LINKEDIN_ACCESS_TOKEN": "",
+    "LINKEDIN_CLIENT_ID": "",
+    "LINKEDIN_CLIENT_SECRET": "",
+    "LINKEDIN_ORGANIZATION_URN": ""
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-05T05:23:57.450Z",
+    "lastRunVersion": "2026.2.24",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "google:default": {
+        "provider": "google",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "apiKey": "ollama-local",
+        "api": "ollama",
+        "models": [
+          {
+            "id": "glm-5:cloud",
+            "name": "glm-5:cloud",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "kimi-k2.5:cloud",
+            "name": "kimi-k2.5:cloud",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 262144
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "ollama/glm-5:cloud",
+        "fallbacks": []
+      },
+      "models": {
+        "ollama/glm-5:cloud": {}
+      },
+      "workspace": "C:\\Users\\Asus\\.openclaw\\workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "default": true,
+        "name": "Main",
+        "workspace": "C:\\Users\\Asus\\.openclaw\\workspace"
+      },
+      {
+        "id": "telegram-bot",
+        "name": "Telegram Bot",
+        "workspace": "C:\\Users\\Asus\\.openclaw\\agents\\telegram-bot\\workspace",
+        "agentDir": "C:\\Users\\Asus\\.openclaw\\agents\\telegram-bot\\agent",
+        "tools": {
+          "allow": [
+            "read",
+            "write",
+            "edit",
+            "exec",
+            "process",
+            "serpapi_search",
+            "serpapi_shopping",
+            "ollama_web_search",
+            "web_fetch",
+            "message",
+            "session_status",
+            "sessions_list",
+            "sessions_history",
+            "sessions_send",
+            "tts"
+          ]
+        }
+      },
+      {
+        "id": "discord-bot",
+        "name": "Discord Bot",
+        "workspace": "C:\\Users\\Asus\\.openclaw\\workspace-discord-bot",
+        "agentDir": "C:\\Users\\Asus\\.openclaw\\agents\\discord-bot\\agent",
+        "tools": {
+          "deny": [
+            "serpapi_*",
+            "ollama_web_search",
+            "web_fetch",
+            "tts",
+            "nodes",
+            "canvas",
+            "browser",
+            "cron"
+          ]
+        }
+      },
+      {
+        "id": "whatsapp-bot",
+        "name": "WhatsApp Bot",
+        "workspace": "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot",
+        "agentDir": "C:\\Users\\Asus\\.openclaw\\agents\\whatsapp-bot\\agent",
+        "tools": {
+          "allow": [
+            "read",
+            "write",
+            "edit",
+            "exec",
+            "process",
+            "message",
+            "session_status",
+            "sessions_list",
+            "sessions_history",
+            "sessions_send"
+          ]
+        }
+      }
+    ]
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": false
+      }
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "telegram-bot",
+      "match": {
+        "channel": "telegram"
+      }
+    },
+    {
+      "agentId": "discord-bot",
+      "match": {
+        "channel": "discord"
+      }
+    },
+    {
+      "agentId": "whatsapp-bot",
+      "match": {
+        "channel": "whatsapp"
+      }
+    }
+  ],
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "dmPolicy": "allowlist",
+      "selfChatMode": true,
+      "allowFrom": [
+        "+917827273619"
+      ],
+      "groupPolicy": "allowlist",
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    },
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "", 
+      "groupPolicy": "allowlist",
+      "streaming": "off"
+    },
+    "discord": {
+      "enabled": true,
+      "token": "",
+      "groupPolicy": "allowlist",
+      "streaming": "off",
+      "guilds": {
+        "1478331068061978675": {
+          "channels": {
+            "1478335099509670049": {
+              "allow": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": ""
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "reminders.add"
+      ]
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-web-search",
+      "github-pr-review",
+      "telegram",
+      "discord",
+      "whatsapp"
+    ],
+    "entries": {
+      "openclaw-web-search": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      },
+      "github-pr-review": {
+        "enabled": true
+      },
+      "discord": {
+        "enabled": true
+      },
+      "whatsapp": {
+        "enabled": true
+      }
+    }
+  }
+}

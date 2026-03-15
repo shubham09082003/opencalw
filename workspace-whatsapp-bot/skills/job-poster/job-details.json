@@ -1,0 +1,14 @@
+{
+  "company": "Excellence Technologies",
+  "headline": "WE ARE HIRING",
+  "title": "Full Stack Developer",
+  "experience": "2-4 Years",
+  "location": "Noida, Uttar Pradesh",
+  "type": "Full-Time",
+  "salary": "3-4 LPA",
+  "skills": ["React.js", "Node.js", "MongoDB", "AWS", "Docker"],
+  "industry": "Information Technology",
+  "benefits": ["Competitive Salary", "Remote Options", "Career Growth"],
+  "contact": "careers@excellencetech.com",
+  "website": "www.excellencetech.com"
+}

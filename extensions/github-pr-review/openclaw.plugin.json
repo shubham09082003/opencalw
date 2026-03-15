@@ -1,0 +1,7 @@
+{
+  "id": "github-pr-review",
+  "name": "GitHub PR Review",
+  "description": "Fetches GitHub PR info and summarizes it via Telegram",
+  "main": "index.ts",
+  "configSchema": {}
+} 

@@ -1,0 +1,26 @@
+{
+  "company": "Excellence Technologies",
+  "headline": "WE ARE HIRING",
+  "title": "Full Stack Developer",
+  "experience": "Fresher",
+  "location": "Noida",
+  "type": "Full-Time",
+  "salary": "3-4 LPA",
+  "skills": [
+    "JavaScript",
+    "React.js",
+    "Node.js",
+    "MongoDB"
+  ],
+  "benefits": [
+    "Learning Opportunities",
+    "Mentorship",
+    "Career Growth"
+  ],
+  "contact": "careers@excellencetech.com",
+  "website": "www.excellencetech.com",
+  "posterPath": "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\skills\\job-poster\\scripts\\output\\poster-full-stack-developer-1773064061584.png",
+  "templateName": "Bold Dark",
+  "templateIndex": 0,
+  "createdAt": "2026-03-09T13:47:41.896Z"
+}

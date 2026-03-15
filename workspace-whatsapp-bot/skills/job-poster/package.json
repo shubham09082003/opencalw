@@ -1,0 +1,14 @@
+{
+  "name": "job-poster",
+  "version": "1.0.0",
+  "description": "Generate professional job posters using AI (Stable Diffusion)",
+  "main": "scripts/poster.js",
+  "scripts": {
+    "generate": "node scripts/poster.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0",
+    "replicate": "^1.4.0",
+    "sharp": "^0.32.6"
+  }
+}

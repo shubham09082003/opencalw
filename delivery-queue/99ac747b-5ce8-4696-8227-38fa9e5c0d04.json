@@ -1,0 +1,28 @@
+{
+  "id": "99ac747b-5ce8-4696-8227-38fa9e5c0d04",
+  "enqueuedAt": 1772883252213,
+  "channel": "whatsapp",
+  "to": "+917827273619",
+  "accountId": "default",
+  "payloads": [
+    {
+      "text": "📋 *Updated Job Poster*\n\nNow with a cleaner bottom card design - your branded background shows through!\n\n✅ Reply \"Yes\" to post on LinkedIn\n❌ Reply \"No\" for more changes",
+      "mediaUrl": "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\job-poster.png",
+      "mediaUrls": [
+        "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\job-poster.png"
+      ]
+    }
+  ],
+  "threadId": null,
+  "gifPlayback": false,
+  "mirror": {
+    "sessionKey": "agent:whatsapp-bot:whatsapp:direct:+917827273619",
+    "agentId": "whatsapp-bot",
+    "text": "📋 *Updated Job Poster*\n\nNow with a cleaner bottom card design - your branded background shows through!\n\n✅ Reply \"Yes\" to post on LinkedIn\n❌ Reply \"No\" for more changes",
+    "mediaUrls": [
+      "C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\job-poster.png"
+    ]
+  },
+  "retryCount": 2,
+  "lastError": "Local media path is not under an allowed directory: C:\\Users\\Asus\\.openclaw\\workspace-whatsapp-bot\\job-poster.png"
+}

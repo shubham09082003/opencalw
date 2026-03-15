@@ -1,0 +1,16 @@
+{
+  "name": "serpapi-search",
+  "version": "1.0.0",
+  "description": "SerpAPI search plugin for OpenClaw - shopping and web search",
+  "main": "index.ts",
+  "type": "module",
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "serpapi",
+    "search",
+    "shopping",
+    "price"
+  ],
+  "license": "MIT"
+}

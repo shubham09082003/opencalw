@@ -1,0 +1,27 @@
+{
+  "id": "serpapi-search",
+  "name": "SerpAPI Search",
+  "description": "Search Google with SerpAPI for prices, shopping results, and web search. Includes shopping and web search tools.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "apiKey": {
+        "type": "string",
+        "description": "SerpAPI API key (or set SERPAPI_KEY env var)"
+      },
+      "defaultGl": {
+        "type": "string",
+        "description": "Default country code (e.g., 'in' for India, 'us' for USA)"
+      },
+      "defaultLocation": {
+        "type": "string",
+        "description": "Default location for localized results"
+      },
+      "maxResults": {
+        "type": "number",
+        "description": "Maximum number of results to return (default: 10)"
+      }
+    }
+  }
+}
